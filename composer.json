@@ -1,0 +1,24 @@
+{
+    "name": "labskai/shopmade-crm",
+    "description": "Contacts for Shopmade: people and leads, linked to customers.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "laravel/framework": "^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shopmade\\Crm\\": "src/",
+            "Shopmade\\Crm\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shopmade\\Crm\\CrmServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
